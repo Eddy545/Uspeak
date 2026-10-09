@@ -13,31 +13,56 @@
     <!-- Top Navigation Bar -->
     <header class="top-bar">
         <div class="logo-area">
-            <h1>U speak <span class="logo-sub">David</span></h1>
+            <h1>Uspeak <span class="logo-sub">David</span></h1>
+          <p>Real American English. Real people. Real life.</p>
         </div>
-        <div class="top-actions">
+      
             <div class="search-bar">
                 <svg class="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                 <input type="text" id="word-input" placeholder="Buscar palabra..." autocomplete="off">
                 <button id="search-btn" class="search-btn">Go</button>
-            </div>
-            <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg> Saved</button>
-            <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> Downloads</button>
-            <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Settings</button>
-        </div>
+
+              
     </header>
 
+
+    <!-- Video Filters Section -->
+        <section class="video-filters">
+            <h3>Video Filters</h3>          
+            <div class="filter-group">
+                <h4>Accent <span class="reset"></span></h4>
+                <div class="filter-buttons">
+                    
+                    <button class="filter-btn">American</button>
+                    <button class="filter-btn">British</button>
+                    <button class="filter-btn">Australian</button>
+                    <button class="filter-btn">Canadian</button>
+                </div>
+            </div>
+
+
+
+
+          
+
+          
+            <div class="filter-group">
+                <h4>Register</h4>
+                <div class="filter-buttons">                <button class="filter-btn">Formal</button>
+                    <button class="filter-btn">Informal</button>
+                    <button class="filter-btn">Slang</button>
+                    <button class="filter-btn">Academic</button>
+                </div>
+            </div>
+            
+
+              
+        </section>
+  
     <!-- Main Content Area -->
     <main class="main-content">
         
-        <!-- Hero Banner -->
-        <section class="hero-banner">
-            <div class="hero-text">
-                <h2>U speak <span class="arrow-icon">↓</span></h2>
-                <p>Real American English. Real people. Real life.</p>
-                <p class="sub-text">You speak. U speak.</p>
-            </div>
-        </section>
+        
 
         <!-- Video Player Section -->
         <section class="video-player-section">
@@ -96,24 +121,7 @@
     <!-- Right Sidebar -->
     <aside class="right-sidebar">
 
-        <!-- Word Details Section -->
-        <section class="word-details">
-            <div class="word-header">
-                <h2 id="dynamic-word">Busca una palabra</h2>
-                <span class="word-type" id="dynamic-type"></span>
-            </div>
-            
-            <!-- Los tabs se generan dinámicamente desde JS -->
-            <div class="tabs-container" id="dynamic-tabs"></div>
-
-            <div class="definition-box">
-                <p id="dynamic-definition"><em>Escribe algo en el buscador de arriba para empezar.</em></p>
-                <button class="audio-btn" id="dynamic-audio" style="display: none;"></button>
-            </div>
-            
-            <!-- Ejemplos escritos dinámicos -->
-            <div class="examples-list" id="dynamic-examples"></div>
-        </section>
+        
 
         <!-- How It Works Section -->
         <section class="how-it-works">
@@ -134,53 +142,7 @@
             </ol>
         </section>
 
-        <!-- Video Filters Section -->
-        <section class="video-filters">
-            <h3>Video Filters</h3>
-            
-            <div class="filter-group">
-                <h4>Accent <span class="reset">Reset</span></h4>
-                <div class="filter-buttons">
-                    <button class="filter-btn active">All</button>
-                    <button class="filter-btn">American</button>
-                    <button class="filter-btn">British</button>
-                    <button class="filter-btn">Australian</button>
-                    <button class="filter-btn">Canadian</button>
-                </div>
-            </div>
-
-            <div class="filter-group">
-                <h4>Register</h4>
-                <div class="filter-buttons">
-                    <button class="filter-btn active">All</button>
-                    <button class="filter-btn">Formal</button>
-                    <button class="filter-btn">Informal</button>
-                    <button class="filter-btn">Slang</button>
-                    <button class="filter-btn">Academic</button>
-                </div>
-            </div>
-            
-            <div class="filter-group">
-                <h4>Video Settings</h4>
-                <div class="toggle-group">
-                    <label class="toggle-switch">
-                        <input type="checkbox" checked>
-                        <span class="slider"></span>
-                        <span class="label-text">Autoplay</span>
-                    </label>
-                    <label class="toggle-switch">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                        <span class="label-text">Loop</span>
-                    </label>
-                    <label class="toggle-switch">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                        <span class="label-text">Speed</span>
-                    </label>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Download App Section -->
         <section class="app-download">
@@ -193,6 +155,23 @@
 
     </aside>
 </div>
+
+
+
+      </div>
+            <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg> Saved</button>
+            <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg> Downloads</button>
+            <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg> Settings</button>
+       </div>
+
+
+
+
+  
 <script src="script.js"></script>
 </body>
+  
 </html>
+
+
+                        
